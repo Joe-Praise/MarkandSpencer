@@ -1,14 +1,10 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import AdminNavBar from "../AdminNavBar";
 import FormBtn from "../../SignIn/FormBtn";
 import SignInFormBg from "../../SignUp/SignInFormBg";
 import { useEffect } from "react";
 import { AppContext } from "../../Context/Context";
-import TextSlide from "../../Mobile_SubComponents/TextSlide";
-import Hambuger from "../../Mobile_SubComponents/homePage/Hambuger";
-import Search from "../../Mobile_SubComponents/homePage/Search";
 
 const CreateUser = () => {
 	const { getUsers } = useContext(AppContext);
@@ -25,7 +21,7 @@ const CreateUser = () => {
 			getUsers()
 		}
 		setUpdate(false)
-	}, [update]);
+	}, [update, getUsers]);
 
 	const handleForm =(e)=>{
 		e.preventDefault();
@@ -59,12 +55,6 @@ const CreateUser = () => {
 
 	return (
 		<div>
-			<header className="mobile_screen" role="banner">
-				<TextSlide />
-				<Hambuger />
-				<Search />
-			</header>
-			<AdminNavBar />
 			<div className="signup_wrapper">
 				<div className="sign_up_container">
 					<h1>CREATE AN ACCOUNT</h1>

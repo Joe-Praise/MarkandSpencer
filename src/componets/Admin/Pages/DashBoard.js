@@ -1,20 +1,17 @@
 import React from "react";
-import AdminNavBar from "../AdminNavBar";
 import BarChart  from "../BarChart"
 import DisplayCards from "../DisplayCards";
 import { useState } from "react";
 import Table from "../Table";
 import { useContext } from "react";
 import { AppContext } from "../../Context/Context";
-import TextSlide from "../../Mobile_SubComponents/TextSlide";
-import Hambuger from "../../Mobile_SubComponents/homePage/Hambuger";
-import Search from "../../Mobile_SubComponents/homePage/Search";
 const DashBoard = () => {
 	const { users, products, cart } = useContext(AppContext);
 
 	const style = {
 		overflowX: "auto",
 	};
+
 	const [Total] = useState([
 			{
 				id: 1,
@@ -55,12 +52,6 @@ const DashBoard = () => {
 	
 	return (
 		<div>
-			<header className="mobile_screen" role="banner">
-				<TextSlide />
-				<Hambuger />
-				<Search />
-			</header>
-			<AdminNavBar />
 			<div className="dashboard_container">
 				<DisplayCards />
 				<div className="left_side">

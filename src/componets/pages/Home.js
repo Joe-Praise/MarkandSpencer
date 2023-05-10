@@ -1,6 +1,4 @@
 import React, { useEffect } from 'react'
-import Footer from "../../Footer";
-import Navigation from "../../Navigation";
 import HomeCircularScroll from '../media scroller/HomeCircularScroll'
 import MsFavourites from '../cards/MsFavourites/MsFavourites'
 import Brands from '../brands/Brands'
@@ -19,10 +17,9 @@ const Home = () => {
 	useEffect(() => {
 		getProducts()
 		getUsers()
-	},[])
+	},[getProducts, getUsers])
   return (
 		<section className="home">
-				<Navigation />
 				<Slider />
 				<HomeCircularScroll />
 				<MsFavourites />
@@ -34,7 +31,6 @@ const Home = () => {
 				<Delivery />
 				<Yourway />
 		  <div className='footer_alt'>
-				<Footer />
 		  </div>
 		</section>
   );

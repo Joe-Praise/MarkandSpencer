@@ -1,10 +1,6 @@
 import React from "react";
 import FormBtn from "../../SignIn/FormBtn";
-import AdminNavBar from "../AdminNavBar";
 import { useState } from "react";
-import TextSlide from "../../Mobile_SubComponents/TextSlide";
-import Hambuger from "../../Mobile_SubComponents/homePage/Hambuger";
-import Search from "../../Mobile_SubComponents/homePage/Search";
 const CreateProduct = () => {
     const [post, setPost] = useState({
 		name: "",
@@ -26,6 +22,7 @@ const CreateProduct = () => {
 		setPost({ ...post, [name]: value });
 	}
 	
+	// assigning the form values to variables for easy undrerstanding
 	let file = files.image;
 	let name = post.name;
 	let quantity = post.quantity
@@ -61,12 +58,6 @@ const CreateProduct = () => {
     
     return (
 		<div>
-			<header className="mobile_screen" role="banner">
-				<TextSlide />
-				<Hambuger />
-				<Search />
-			</header>
-			<AdminNavBar />
 			<div className="sign_in_container">
 				<legend>Create Product</legend>
 				<form className="create_porduct_form" onSubmit={createProduct}>

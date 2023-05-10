@@ -5,7 +5,7 @@ import Search from "./componets/Mobile_SubComponents/homePage/Search";
 import TextSlide from "./componets/Mobile_SubComponents/TextSlide";
 const Navigation = () => {
 	return (
-		<div>
+		<div className="position-relative">
 			{/* for mobile devices */}
 			<header className="mobile_screen" role="banner">
 				<TextSlide />

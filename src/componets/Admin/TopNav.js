@@ -7,8 +7,9 @@ import DesktopInput from "../Destop_nav bar/DesktopInput";
 const TopNav = () => {
 	return (
 		<div className="Line1">
+
 			<figure className="desktop_logo">
-				<Link to="/" className="desktop_nav_links">
+				<Link to="/secureadmin/dashboard" className="desktop_nav_links">
 					<img src={Logo} alt="M&S Logo" />
 				</Link>
 			</figure>

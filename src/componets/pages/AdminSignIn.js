@@ -1,23 +1,13 @@
 import React from 'react'
 import { useState } from 'react';
 import { Link } from "react-router-dom";
-import Navigation from '../../Navigation';
-import Footer from '../../Footer';
 const AdminSignIn = () => {
 
     const [adminId, setAdminId] = useState("");
     const [pwd, setPwd] = useState("");
 
-    // const handleSignIn = (e) => {
-    //     e.preventDefault();
-    //     if (adminId !== "AD102030" && pwd !== "MARKANDSPENCE") {
-    //        alert("Hehehe FRAUD!😆")
-    //     }
-    // }
-
     return (
 		<div>
-			<Navigation />
 			<div className="sign_in_container admin_sign_in">
 				<legend>Admin Sign In</legend>
 				<form className="sign_in_form">
@@ -75,7 +65,6 @@ const AdminSignIn = () => {
 					</Link>
 				</p>
 			</div>
-			<Footer />
 		</div>
 	);
 }

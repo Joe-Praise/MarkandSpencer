@@ -1,6 +1,5 @@
 import React from "react";
 import { useContext } from "react";
-// import Product from "./ProductData";
 import { Link } from "react-router-dom";
 import { AppContext } from "../Context/Context";
 const ProductCard = () => {
@@ -48,4 +47,4 @@ const ProductCard = () => {
 	);
 };
 
-export default ProductCard;
+export default React.memo(ProductCard);

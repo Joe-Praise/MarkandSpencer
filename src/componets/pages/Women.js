@@ -20,59 +20,53 @@ import ValueYouCanTrust from "../cards/womenCard/Value_you_can_trust/ValueYouCan
 import WaysToWow from "../cards/womenCard/ways_to_wow/WaysToWow";
 import MoreToExplore from "../cards/womenCard/MoreToExplore";
 import Brands from "../brands/Brands";
-import Navigation from "../../Navigation";
-import Footer from "../../Footer";
 
 const Women = () => {
-	return (
-		<section>
-			<Navigation />
-			<div className="contain">
-				<h1>Women</h1>
-				<div className="horizontal_scroll_container snaps_inline height">
-					<CircleCard pic={slide1} text={"Day-to-night outfits"} />
-					<CircleCard pic={slide2} text={"Dresses"} />
-					<CircleCard pic={slide3} text={"Knitwear"} />
-					<CircleCard pic={slide4} text={"Coats & jackets"} />
-					<CircleCard pic={slide5} text={"Shirts & blouses"} />
-					<CircleCard pic={slide6} text={"Jeans"} />
-					<CircleCard pic={slide7} text={"Trousers"} />
-					<CircleCard pic={slide8} text={"Sexy lingerie"} />
-					<CircleCard
-						pic={slide9}
-						text={"Valentine’s Day nightwear"}
-					/>
-					<CircleCard
-						pic={slide10}
-						text={"Trending: pink clothing"}
-					/>
-				</div>
-				<WomenBgGrid />
-				<Minicard
-					img={card1img}
-					text1={"It's the little things"}
-					text2={"Celebrate love in all it's forms"}
-					text3={"Shop Valentine's Day gift"}
-				/>
-				<EscapeForWinter />
-				<Yourway />
-				<ValueYouCanTrust />
-				<WaysToWow />
-				{/* used to target and change the card color */}
-				<div className="mini_2">
-					<Minicard
-						img={card2img}
-						text1={"The Edit"}
-						text2={"The very best pieces of the season"}
-						text3={"Shop now"}
-					/>
-				</div>
-				<MoreToExplore />
-				<Brands />
-			</div>
-			<Footer />
-		</section>
-	);
+  return (
+    <section>
+      <div className="contain">
+        <h1>Women</h1>
+        <div className="horizontal_scroll_container snaps_inline height">
+          <CircleCard pic={slide1} text={"Day-to-night outfits"} />
+          <CircleCard pic={slide2} text={"Dresses"} />
+          <CircleCard pic={slide3} text={"Knitwear"} />
+          <CircleCard pic={slide4} text={"Coats & jackets"} />
+          <CircleCard pic={slide5} text={"Shirts & blouses"} />
+          <CircleCard pic={slide6} text={"Jeans"} />
+          <CircleCard pic={slide7} text={"Trousers"} />
+          <CircleCard pic={slide8} text={"Sexy lingerie"} />
+          <CircleCard pic={slide9} text={"Valentine’s Day nightwear"} />
+          <CircleCard pic={slide10} text={"Trending: pink clothing"} />
+        </div>
+
+        <WomenBgGrid />
+
+        <Minicard
+          img={card1img}
+          text1={"It's the little things"}
+          text2={"Celebrate love in all it's forms"}
+          text3={"Shop Valentine's Day gift"}
+        />
+
+        <EscapeForWinter />
+        <Yourway />
+        <ValueYouCanTrust />
+        <WaysToWow />
+
+        {/* used to target and change the card color */}
+        <div className="mini_2">
+          <Minicard
+            img={card2img}
+            text1={"The Edit"}
+            text2={"The very best pieces of the season"}
+            text3={"Shop now"}
+          />
+        </div>
+        <MoreToExplore />
+        <Brands />
+      </div>
+    </section>
+  );
 };
 
 export default Women;
