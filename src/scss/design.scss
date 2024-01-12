@@ -2617,7 +2617,7 @@ table {
       gap: 3%;
       @include d-flex(center);
       align-items: baseline;
-      .formBtn {
+      .sign {
         flex-basis: 45%;
         cursor: pointer;
       }
