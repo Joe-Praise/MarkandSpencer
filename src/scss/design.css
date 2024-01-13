@@ -1723,6 +1723,10 @@ h1 {
   flex-basis: 48%;
   margin: 10px 0;
 }
+.Product_container .product_card:hover {
+  scale: 1.05;
+  transition: 0.5s ease-in-out all;
+}
 .Product_container .product_card figure img {
   width: 100%;
   height: 100%;
@@ -1909,7 +1913,11 @@ h1 {
   margin: 5px 0;
   font-size: 1.1rem;
   padding: 0.7rem 1.05rem;
+  background: transparent;
   cursor: pointer;
+}
+.emerald_freeStandard .push_to_cart .size .size-btn--container .size-btn:focus {
+  background-color: #D0D0D0;
 }
 .emerald_freeStandard .push_to_cart .qty {
   margin: 1rem 0;
@@ -2926,7 +2934,7 @@ table td figure img {
   flex-flow: row wrap;
   align-items: baseline;
 }
-.Product_container_admin .product_card .product_btn .formBtn {
+.Product_container_admin .product_card .product_btn .sign {
   flex-basis: 45%;
   cursor: pointer;
 }
@@ -5721,7 +5729,7 @@ table td figure img {
     position: absolute;
     width: 90vw;
     margin: 0 auto;
-    top: 148px;
+    top: 170px;
     left: 0px;
     right: 0;
     z-index: 900;
@@ -5836,7 +5844,7 @@ table td figure img {
     position: absolute;
     width: 90vw;
     margin: 0 auto;
-    top: 148px;
+    top: 170px;
     left: 0px;
     right: 0;
     z-index: 900;
